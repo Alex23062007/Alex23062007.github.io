@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        cta readiness level
+    </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>cta readiness level</h1>
+    <div class="meter">
+        <div class="fill"></div>
+        <span class="text">60%</span>
+    </div>
+
+    <script>
+        function updateProgress(progressBar, value) {
+            value = Math.round(value);
+            progressBar.querySelector(".fill").style.width = `${value}%`;
+            progressBar.querySelector(".text").textContent = `${value}%`;
+        }
+    </script>
+</body>
+
+</html>
